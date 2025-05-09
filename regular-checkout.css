@@ -1,0 +1,214 @@
+.style-1 .checkout-info-inner {
+    max-width: 100% !important;
+  }
+  
+  input {
+    transition: box-shadow 0.25s ease, border-color 0.25s ease;
+  }
+  
+  input {
+    outline: 2px solid transparent !important;
+    outline-offset: 2px;
+    transition:
+    outline-color 0.25s ease,
+    outline-width 0.25s ease,
+    outline-offset 0.25s ease;
+  }
+  
+  input:focus {
+    outline-color: var(--color-primary) !important;
+    outline-width: 2px;
+    outline-offset: 2px;
+  }
+  
+  /* Show loading background when there is NO .speedy inside */
+  
+  [data-role="shipping-option-speedy-office"] {
+    min-height: 122px;
+  }
+  
+  [data-role="shipping-option-speedy-office"]:has(:not(.speedy)) {
+    background-image: url("https://content.app-sources.com/s/444199322893535411/uploads/Images/loading-0669476.gif");
+    background-size: 64px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  /* Remove background when .speedy exists inside */
+  [data-role="shipping-option-speedy-office"]:has(.speedy) {
+    background-image: none;
+  }
+  
+  
+  
+  /* Mobile-specific Adjustments */
+  @media only screen and (max-width: 768px) {
+  
+    [data-role="delivery-type-picker"] {
+      flex-direction: column-reverse !important;
+    }
+  
+    .checkout-info {
+      padding:0px !important;
+    }
+  
+  }
+  
+  [data-role="delivery-type-picker"] {
+    flex-direction: row-reverse;
+  }
+  
+  .ml-10 {
+    margin-left: 0px !important;
+    margin-right: 16px;
+  }
+  
+  .stickyheadertimer {
+    z-index: 99 !important;
+    background-color: var(--accent-color) !important;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100vw !important;
+  }
+  
+  #timer {
+    color: white !important;
+  }
+  
+  input[name="shippingZipCode"] {
+    display: none !important;
+  }
+  
+  /* Input Fields */
+  input[name="shippingCity"],
+  input[name="shippingCompanyName"],
+  input[name="shippingAddress"] {
+    width: 100% !important;
+  }
+  
+  .tick-wrapper:has(input:checked),
+  input:focus {
+    border: 2px solid var(--accent-color);
+  }
+  
+  label[data-payment="cod"] {
+    border:1px solid #e1e1e1!important;
+  }
+  
+  .pre-shipping-tax-wrapper,
+  [data-role="pickFromMap"] {
+    display: none !important;
+  }
+  
+  .tick-wrapper > input:checked + span:before {
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
+  }
+  
+  [data-step="shipping"]:has([data-role="shipping-option-speedy-office"].none) {
+    display: none !important;
+  }
+  
+  [data-step="shipping"] > section > h3, [data-role="billing-info"] {
+    display: none !important;
+  }
+  
+  [data-role="shipping-option-speedy-office"] > span {
+    display: none !important;
+  }
+  
+  [data-role="shipping-option-speedy-office"] .col20 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  a[data-role="continue"], .checkout-info input{
+    border-radius: var(--border-radius) !important;
+  }
+  
+  .mt-15 {
+    margin-top:0px !important;
+  }
+  
+  [data-role="shipping-option-speedy-office"], [data-step="billing"] section {
+    margin-bottom:0px !important;
+  }
+  
+  [data-step="shipping"] section {
+    margin:0px !important;
+  }
+  
+  [data-role="shipping-option-speedy-office"] .col20 > span {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+  
+  h3, a[data-role="continue"] {
+    font-weight: 600 !important;
+  }
+  
+  .subtotal-wrapper {
+    justify-content:space-between;
+  }
+  
+  .subtotal-wrapper.grand-total-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+  }
+  
+  .subtotal-wrapper.coupon-code-wrapper {
+      display: none !important;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100% !important;
+  }
+  
+  .promo-code-toggle-btn {
+    display: none !important;
+  }
+  
+  [name="name"], [name="shippingCity"], [data-role="delivery-type-picker"] .tick-wrapper {
+    margin-bottom:12px !important;
+  }
+  
+  [data-role="delivery-type-picker"] .tick-wrapper {
+    background: url("https://content.app-sources.com/s/899642056723303621/uploads/Icons/Speedy_Logo_Vector-6716262.svg")
+                no-repeat right 12px center / 74px auto;
+  }
+  
+  a[data-role="continue"] {
+      display: flex !important;
+      flex-direction: row-reverse !important;
+      justify-content: center !important;
+      gap: 12px;
+      padding: 24px 16px !important;
+  }
+  
+  .fa-check:before {
+      content: "\f058" !important;
+  }
+  
+  .checkout-summary {
+      width: 100% !important
+  }
+  
+  .address-title{
+    margin-top:24px !important;
+  }
+  
+  [data-step="billing"] {
+    margin-top:8px !important;
+  }
+  
+  .grand-total {
+    display:flex;
+  }
+  
+  .checkout-old-price, .old-grand-total {
+    color: red;
+  }
