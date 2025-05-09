@@ -2,6 +2,10 @@
   max-width: 100% !important;
 }
 
+[data-type="CheckoutWidget"] {
+  min-height: 800px !important;
+}
+
 /* Merged input rules for transitions and outline */
 input {
   transition: box-shadow 0.25s ease, border-color 0.25s ease, outline-color 0.25s ease, outline-width 0.25s ease, outline-offset 0.25s ease;
