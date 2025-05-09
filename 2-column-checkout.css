@@ -6,17 +6,11 @@
   max-width: 100% !important;
 }
 
+/* Merged input rules for transitions and outline */
 input {
-  transition: box-shadow 0.25s ease, border-color 0.25s ease;
-}
-
-input {
+  transition: box-shadow 0.25s ease, border-color 0.25s ease, outline-color 0.25s ease, outline-width 0.25s ease, outline-offset 0.25s ease;
   outline: 2px solid transparent !important;
   outline-offset: 2px;
-  transition:
-  outline-color 0.25s ease,
-  outline-width 0.25s ease,
-  outline-offset 0.25s ease;
 }
 
 input:focus {
@@ -45,7 +39,7 @@ input:focus {
 
 
 
-/* Mobile-specific Adjustments */
+/* Merged all @media only screen and (max-width: 768px) rules into one block */
 @media only screen and (max-width: 768px) {
 
   [data-role="delivery-type-picker"] {
