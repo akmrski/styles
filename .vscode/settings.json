@@ -1,8 +1,24 @@
 {
+    "editor.formatOnSave": true,
+    "taskButtons.showDetectionTasks": false,
     "taskButtons.tasks": [
-    {
-        "label": "🚀 Push CSS",
-        "task": "Push CSS Changes"
-    }
-]
+        {
+            "label": "🚀 Push CSS",
+            "task": "Push CSS Changes"
+        }
+    ],
+    "taskExplorer.includeAnt": false,
+    "taskExplorer.includeBash": false,
+    "taskExplorer.includeBatch": false,
+    "taskExplorer.includeGradle": false,
+    "taskExplorer.includeGrunt": false,
+    "taskExplorer.includeGulp": false,
+    "taskExplorer.includeMake": false,
+    "taskExplorer.includeMaven": false,
+    "taskExplorer.includeNpm": false,
+    "taskExplorer.includeNsis": false,
+    "taskExplorer.includePowershell": false,
+    "taskExplorer.includePython": false,
+    "taskExplorer.includeRuby": false,
+    "taskExplorer.includeWorkspace": false
 }
