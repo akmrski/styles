@@ -211,11 +211,6 @@ h3, a[data-role="continue"] {
   flex-direction: row-reverse;
 }
 
-.ml-10 {
-  margin-left: 0px !important;
-  margin-right: 16px;
-}
-
 input[name="shippingZipCode"] {
   display: none !important;
 }
