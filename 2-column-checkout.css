@@ -135,6 +135,7 @@ label[data-payment="cod"] {
 h3,
 a[data-role="continue"] {
   font-weight: 600 !important;
+  transform:none !important;
 }
 
 /* === FORM STEPS LAYOUT === */
