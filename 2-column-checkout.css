@@ -155,14 +155,11 @@ a[data-role="continue"] {
 .ml-10,
 .mt-15 {
   margin-left: 0px !important;
+  margin-top: 0px !important;
 }
 
 .ml-10 {
   margin-right: 16px;
-}
-
-.mt-15 {
-  margin-top: 0px !important;
 }
 
 /* === ICON OVERRIDES === */
