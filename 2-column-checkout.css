@@ -1,3 +1,4 @@
+/* === BASE & LAYOUT === */
 .style-1 .checkout-info-inner {
   max-width: 100% !important;
 }
@@ -6,21 +7,60 @@
   min-height: 800px !important;
 }
 
-/* Merged input rules for transitions and outline */
-input {
-  transition: box-shadow 0.25s ease, border-color 0.25s ease, outline-color 0.25s ease, outline-width 0.25s ease, outline-offset 0.25s ease;
-  outline: 2px solid transparent !important;
-  outline-offset: 2px;
+.stickyheadertimer {
+  z-index: 99 !important;
+  background-color: var(--accent-color) !important;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  width: 100vw !important;
 }
 
+#timer {
+  color: white !important;
+}
+
+.checkout-summary {
+  width: 100% !important;
+}
+
+.address-title {
+  margin-top: 24px !important;
+}
+
+/* === CHECKOUT INFO === */
+.checkout-info input,
+a[data-role="continue"] {
+  border-radius: var(--border-radius) !important;
+}
+
+.checkout-info {
+  /* padding in media query */
+}
+
+/* === DELIVERY TYPE PICKER === */
+[data-role="delivery-type-picker"] {
+  flex-direction: row-reverse;
+}
+
+[data-role="delivery-type-picker"] .tick-wrapper {
+  background: url("https://cdn.onecard.bg/speedy-logo-full.svg")
+    no-repeat right 12px center / 74px auto;
+  margin-bottom: 12px !important;
+}
+
+/* === TICK WRAPPER === */
+.tick-wrapper:has(input:checked),
 input:focus {
-  outline-color: var(--color-primary) !important;
-  outline-width: 2px;
-  outline-offset: 2px;
+  border: 2px solid var(--accent-color);
 }
 
-/* Show loading background when there is NO .speedy inside */
+.tick-wrapper > input:checked + span:before {
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
 
+/* === SHIPPING OPTION SPEEDY OFFICE === */
 [data-role="shipping-option-speedy-office"] {
   min-height: 122px;
 }
@@ -31,15 +71,130 @@ input:focus {
   background-repeat: no-repeat;
   background-position: center;
 }
-
-/* Remove background when .speedy exists inside */
 [data-role="shipping-option-speedy-office"]:has(.speedy) {
   background-image: none;
 }
+[data-role="shipping-option-speedy-office"] .col20 {
+  display: flex;
+  flex-direction: column;
+}
+[data-role="shipping-option-speedy-office"] .col20 > span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+[data-role="shipping-option-speedy-office"] > span {
+  display: none !important;
+}
+[data-role="shipping-option-speedy-office"], [data-step="billing"] section {
+  margin-bottom: 0px !important;
+}
 
+/* === INPUT FIELDS === */
+input {
+  transition: box-shadow 0.25s ease, border-color 0.25s ease, outline-color 0.25s ease, outline-width 0.25s ease, outline-offset 0.25s ease;
+  outline: 2px solid transparent !important;
+  outline-offset: 2px;
+}
+input:focus {
+  outline-color: var(--color-primary) !important;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+input[name="shippingZipCode"] {
+  display: none !important;
+}
+input[name="shippingCity"],
+input[name="shippingCompanyName"],
+input[name="shippingAddress"] {
+  width: 100% !important;
+}
+[name="name"], [name="shippingCity"], [data-role="delivery-type-picker"] .tick-wrapper {
+  margin-bottom: 12px !important;
+}
 
+/* === BILLING & SHIPPING STEPS === */
+[data-step="shipping"] section {
+  margin: 0px !important;
+}
+[data-step="shipping"]:has([data-role="shipping-option-speedy-office"].none) {
+  display: none !important;
+}
+[data-step="shipping"] > section > h3, [data-role="billing-info"] {
+  display: none !important;
+}
+[data-step="billing"] {
+  margin-top: 8px !important;
+}
 
-/* Merged all @media only screen and (max-width: 768px) rules into one block */
+/* === SUBTOTAL & GRAND TOTAL === */
+.subtotal-wrapper {
+  justify-content: space-between;
+}
+.subtotal-wrapper.grand-total-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.grand-total {
+  display: flex;
+}
+.subtotal-wrapper.coupon-code-wrapper {
+  display: none !important;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100% !important;
+}
+
+/* === BUTTONS & LABELS === */
+a[data-role="continue"] {
+  display: flex !important;
+  flex-direction: row-reverse !important;
+  justify-content: center !important;
+  gap: 12px;
+  padding: 24px 16px !important;
+}
+.fa-check:before {
+  content: "\f058" !important;
+}
+label[data-payment="cod"] {
+  border: 1px solid #e1e1e1!important;
+}
+
+/* === UTILITY CLASSES === */
+.ml-10 {
+  margin-left: 0px !important;
+  margin-right: 16px;
+}
+.mt-15 {
+  margin-top: 0px !important;
+}
+
+/* === GROUPED DISPLAY:NONE === */
+.pre-shipping-tax-wrapper,
+[data-role="pickFromMap"],
+[data-step="shipping"]:has([data-role="shipping-option-speedy-office"].none),
+[data-step="shipping"] > section > h3,
+[data-role="billing-info"],
+[data-role="shipping-option-speedy-office"] > span,
+.subtotal-wrapper.coupon-code-wrapper,
+.promo-code-toggle-btn,
+input[name="shippingZipCode"] {
+  display: none !important;
+}
+
+.checkout-old-price, .old-grand-total {
+  color: red;
+}
+
+/* === TYPOGRAPHY === */
+h3, a[data-role="continue"] {
+  font-weight: 600 !important;
+}
+
+/* === MEDIA QUERIES === */
 @media only screen and (max-width: 768px) {
 
   [data-role="delivery-type-picker"] {
@@ -59,19 +214,6 @@ input:focus {
 .ml-10 {
   margin-left: 0px !important;
   margin-right: 16px;
-}
-
-.stickyheadertimer {
-  z-index: 99 !important;
-  background-color: var(--accent-color) !important;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-  width: 100vw !important;
-}
-
-#timer {
-  color: white !important;
 }
 
 input[name="shippingZipCode"] {
