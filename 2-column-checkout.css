@@ -140,6 +140,7 @@ a[data-role="continue"] {
 /* === FORM STEPS LAYOUT === */
 [data-step="billing"] {
   margin-top: 8px !important;
+  opacity: 1 !important;
 }
 
 [data-step="shipping"] section {
