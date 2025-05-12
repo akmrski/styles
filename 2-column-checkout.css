@@ -95,7 +95,8 @@ input[name="shippingZipCode"],
 [data-step="shipping"] > section > h3,
 [data-role="billing-info"],
 .subtotal-wrapper.coupon-code-wrapper,
-.promo-code-toggle-btn {
+.promo-code-toggle-btn,
+[data-role="shipping-option-speedy-office"] > span   {
   display: none !important;
 }
 
