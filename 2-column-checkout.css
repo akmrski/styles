@@ -34,10 +34,6 @@ a[data-role="continue"] {
   border-radius: var(--border-radius) !important;
 }
 
-.checkout-info {
-  /* padding in media query */
-}
-
 /* === DELIVERY TYPE PICKER === */
 [data-role="delivery-type-picker"] {
   flex-direction: row-reverse;
