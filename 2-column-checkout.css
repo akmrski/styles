@@ -26,7 +26,7 @@ input:focus {
 }
 
 [data-role="shipping-option-speedy-office"]:has(:not(.speedy)) {
-  background-image: url("https://content.app-sources.com/s/444199322893535411/uploads/Images/loading-0669476.gif");
+  background-image: url("https://cdn.onecard.bg/loader.gif");
   background-size: 64px;
   background-repeat: no-repeat;
   background-position: center;
@@ -116,25 +116,21 @@ label[data-payment="cod"] {
   display: none !important;
 }
 
-[data-role="shipping-option-speedy-office"] .col20 {
-  display: flex;
-  flex-direction: column;
-}
-
-a[data-role="continue"], .checkout-info input{
-  border-radius: var(--border-radius) !important;
-}
-
 .mt-15 {
-  margin-top:0px !important;
+  margin-top: 0px !important;
 }
 
 [data-role="shipping-option-speedy-office"], [data-step="billing"] section {
-  margin-bottom:0px !important;
+  margin-bottom: 0px !important;
 }
 
 [data-step="shipping"] section {
-  margin:0px !important;
+  margin: 0px !important;
+}
+
+[data-role="shipping-option-speedy-office"] .col20 {
+  display: flex;
+  flex-direction: column;
 }
 
 [data-role="shipping-option-speedy-office"] .col20 > span {
@@ -150,63 +146,105 @@ h3, a[data-role="continue"] {
 }
 
 .subtotal-wrapper {
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .subtotal-wrapper.grand-total-wrapper {
   display: flex;
   flex-direction: row-reverse;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
-.subtotal-wrapper.coupon-code-wrapper {
-    display: none !important;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100% !important;
-}
-
-.promo-code-toggle-btn {
+/* Grouped display:none rules for optimization */
+.pre-shipping-tax-wrapper,
+[data-role="pickFromMap"],
+[data-step="shipping"]:has([data-role="shipping-option-speedy-office"].none),
+[data-step="shipping"] > section > h3,
+[data-role="billing-info"],
+[data-role="shipping-option-speedy-office"] > span,
+.subtotal-wrapper.coupon-code-wrapper,
+.promo-code-toggle-btn,
+input[name="shippingZipCode"] {
   display: none !important;
 }
 
 [name="name"], [name="shippingCity"], [data-role="delivery-type-picker"] .tick-wrapper {
-  margin-bottom:12px !important;
+  margin-bottom: 12px !important;
 }
 
 [data-role="delivery-type-picker"] .tick-wrapper {
-  background: url("https://content.app-sources.com/s/899642056723303621/uploads/Icons/Speedy_Logo_Vector-6716262.svg")
+  background: url("https://cdn.onecard.bg/speedy-logo-full.svg")
               no-repeat right 12px center / 74px auto;
 }
 
+a[data-role="continue"], .checkout-info input {
+  border-radius: var(--border-radius) !important;
+}
+
 a[data-role="continue"] {
-    display: flex !important;
-    flex-direction: row-reverse !important;
-    justify-content: center !important;
-    gap: 12px;
-    padding: 24px 16px !important;
+  display: flex !important;
+  flex-direction: row-reverse !important;
+  justify-content: center !important;
+  gap: 12px;
+  padding: 24px 16px !important;
 }
 
 .fa-check:before {
-    content: "\f058" !important;
+  content: "\f058" !important;
 }
 
 .checkout-summary {
-	width: 100% !important
+  width: 100% !important;
 }
 
-.address-title{
-  margin-top:24px !important;
+.address-title {
+  margin-top: 24px !important;
 }
 
 [data-step="billing"] {
-  margin-top:8px !important;
+  margin-top: 8px !important;
 }
 
 .grand-total {
-  display:flex;
+  display: flex;
 }
 
 .checkout-old-price, .old-grand-total {
   color: red;
+}
+
+.stickyheadertimer {
+  z-index: 99 !important;
+  background-color: var(--accent-color) !important;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  width: 100vw !important;
+}
+
+#timer {
+  color: white !important;
+}
+
+input[name="shippingCity"],
+input[name="shippingCompanyName"],
+input[name="shippingAddress"] {
+  width: 100% !important;
+}
+
+.tick-wrapper:has(input:checked),
+input:focus {
+  border: 2px solid var(--accent-color);
+}
+
+label[data-payment="cod"] {
+  border:1px solid #e1e1e1!important;
+}
+
+[data-role="shipping-option-speedy-office"] .col20 > span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+  line-height: 1.4;
 }
