@@ -179,3 +179,7 @@ a[data-role="continue"] {
     padding: 0px !important;
   }
 }
+
+[data-type="textarea"] {
+  margin-top:16px !important;
+}
