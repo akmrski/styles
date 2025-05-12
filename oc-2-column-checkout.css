@@ -17,7 +17,8 @@
 
 /* === CHECKOUT INFO & CONTINUE BUTTON === */
 .checkout-info input,
-a[data-role="continue"] {
+a[data-role="continue"],
+[name="field0"] {
   border-radius: var(--border-radius) !important;
 }
 
