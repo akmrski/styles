@@ -115,12 +115,7 @@ input[name="shippingAddress"] {
 [data-step="shipping"] section {
   margin: 0px !important;
 }
-[data-step="shipping"]:has([data-role="shipping-option-speedy-office"].none) {
-  display: none !important;
-}
-[data-step="shipping"] > section > h3, [data-role="billing-info"] {
-  display: none !important;
-}
+
 [data-step="billing"] {
   margin-top: 8px !important;
 }
