@@ -190,4 +190,8 @@ a[data-role="continue"] {
 
 [name="field0"] {
   border-radius: 6px !important;
-} 
+}
+
+[name="email"] {
+  margin-top:12px !important;
+}
