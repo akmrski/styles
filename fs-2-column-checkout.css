@@ -185,7 +185,7 @@ a[data-role="continue"] {
 }
 
 [data-type="textarea"]:has([name="field0"]) {
-  margin-top:12x !important;
+  margin-top:12px !important;
 }
 
 [name="field0"] {
