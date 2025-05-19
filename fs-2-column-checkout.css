@@ -179,3 +179,7 @@ a[data-role="continue"] {
     padding: 0px !important;
   }
 }
+
+widget-preserving-ratio-outer {
+  padding-bottom:16px !important;
+}
