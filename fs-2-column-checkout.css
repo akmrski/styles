@@ -180,6 +180,6 @@ a[data-role="continue"] {
   }
 }
 
-widget-preserving-ratio-outer {
+.widget-preserving-ratio-outer {
   padding-bottom:16px !important;
 }
