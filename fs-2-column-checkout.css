@@ -183,3 +183,11 @@ a[data-role="continue"] {
 [data-type="Spacer"] > .widget-preserving-ratio-outer {
   padding-bottom:16px !important;
 }
+
+[data-type="textarea"]:has([name="field0"]) {
+  margin-top:12x !important;
+}
+
+[name="field0"] {
+  border-radius: 6px !important;
+} 
