@@ -195,8 +195,3 @@ a[data-role="continue"] {
 [name="email"] {
   margin-top:12px !important;
 }
-
-[data-role="address-part"] {
-  display: flex !important;
-  flex-direction: column-reverse;
-}
