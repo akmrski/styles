@@ -196,7 +196,7 @@ a[data-role="continue"] {
   margin-top:12px !important;
 }
 
-.address-part {
+[data-role="address-part"] {
   display: flex;
   flex-direction: column-reverse;
 }
