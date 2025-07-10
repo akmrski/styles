@@ -1,0 +1,285 @@
+<style>
+
+@media only screen and (min-width: 768px) {
+    .checkouts-wrapper {
+        display:flex !important;
+        flex-direction:row-reverse;
+        gap: 32px;
+      }
+    .style-2.cart-wrapper .checkout-info {
+        width: 50% !important;
+      }
+  }
+
+  .checkouts-wrapper {
+    gap: 32px;
+  }
+
+  /* === LAYOUT & CONTAINERS === */
+  [data-type="CheckoutWidget"] {
+    min-height: 800px !important;
+  }
+
+  .style-2.cart-wrapper .checkout-info {
+    padding: 16px !important;
+    border-radius: 6px !important;
+    border:1px solid #E5E7EB !important;
+}
+  
+  .address-title {
+    margin-top: 24px !important;
+  }
+  
+  .cart-container {
+    margin-bottom: 16px !important;
+  }
+  
+  .cart-table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  
+
+  .checkout-summary .cart-container img {
+    width: auto;
+    }
+
+    div.payment-step-wrapper .checkout-summary {
+        padding: 16px !important;
+        height: fit-content;
+    }
+      
+  
+  .cart-row-new {
+    padding: 8px !important;
+    width: 48% !important;
+    border-radius: 6px !important;
+    margin: 0px !important;
+  }
+  
+  .cart-row-new .image {
+    margin: 0px !important;
+  }
+  
+  .cart-row-new .image > img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    border-radius: 6px !important;
+  }
+  
+  /* === FORM ELEMENTS & INPUTS === */
+  .checkout-info input,
+  .tick-wrapper {
+    border-radius: 6px !important;
+  }
+  
+  input[name="shippingCity"],
+  input[name="shippingCompanyName"],
+  input[name="shippingAddress"] {
+    width: 100% !important;
+  }
+  
+  /* group bottom margins for name, city and tick-wrapper */
+  [name="name"],
+  [name="shippingCity"],
+  [data-role="delivery-type-picker"] .tick-wrapper {
+    margin-bottom: 12px !important;
+  }
+  
+  .form-field {
+    margin-top: 16px;
+  }
+  
+  .iti--allow-dropdown {
+    margin-bottom: 5px !important;
+  }
+  
+  [data-type="textarea"]:has([name="field0"]) {
+    margin-top: 12px !important;
+  }
+  
+  [name="field0"] {
+    border-radius: 6px !important;
+  }
+  
+  /* === CONTINUE BUTTON === */
+  a[data-role="continue"] {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    justify-content: center !important;
+    gap: 12px;
+    padding: 24px 16px !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    transform: none !important;
+  }
+  
+  /* === TICK WRAPPERS & CHECKBOXES === */
+  .tick-wrapper > input:checked + span:before {
+    background: #224290;
+    border: 1px solid #224290;
+  }
+  
+  .tick-wrapper:has(input:checked), input:focus {
+    border: 1px solid #224290 !important;
+  }
+  
+  .cart-table.style-1 .fake-checkbox.checked {
+    border: 2px solid #224290;
+    background: #EFF7FF !important;
+  }
+  
+  .fake-checkbox:not(.checked) {
+    border: 2px solid #E5E7EB !important;
+  }
+  
+  .cart-container .fake-checkbox.checked:before, 
+  .cart-container .fake-checkbox:before {
+    display: none;
+  }
+  
+  /* === SECTION MARGINS & LAYOUT === */
+  .checkout-info section {
+    float: left;
+    width: 100%;
+    margin-top: 2px !important;
+    margin-bottom: 16px !important;
+  }
+  
+  [data-step="billing"] {
+    margin-top: 8px !important;
+    opacity: 1 !important;
+  }
+  
+  [data-step="shipping"] section {
+    margin: 0 !important;
+  }
+  
+  [data-step="billing"] section {
+    margin-bottom: 0px !important;
+  }
+  
+  .next-prev-buttons {
+    margin-top: 0px !important;
+  }
+  
+  /* === UTILITY CLASSES === */
+  .ml-10,
+  .mt-15 {
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+  }
+  
+  .ml-10 {
+    margin-right: 10px;
+  }
+  
+  /* === SHIPPING OPTION STYLING === */
+  [data-role="shipping-option-speedy-office"] {
+    border: 3px solid #026DFF !important;
+    background-color: #EFF6FF !important;
+  }
+  
+  [data-role="shipping-option-speedy-office"] .col20 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  [data-role="shipping-option-speedy-office"] .col20 > span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 8px;
+  }
+  
+  .speedy > div {
+    margin-top: 0px !important;
+  }
+  
+  [data-role="delivery-type-picker"] {
+    flex-direction: row-reverse;
+  }
+  
+  /* === SUBTOTAL & GRAND TOTAL === */
+  .subtotal-wrapper {
+    justify-content: space-between;
+  }
+  
+  .subtotal-wrapper.grand-total-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  
+  .grand-total {
+    display: flex;
+  }
+  
+  .checkout-old-price {
+    color: red;
+  }
+  
+  /* === CASH ON DELIVERY BORDER === */
+  label[data-payment="cod"] {
+    border: 1px solid #e1e1e1 !important;
+  }
+  
+  /* === HEADERS & WEIGHTS === */
+  h3 {
+    font-weight: 600 !important;
+    transform: none !important;
+  }
+  
+  .product-info > h4 {
+    font-weight: 600;
+  }
+  
+  /* === ICON OVERRIDES === */
+  .fa-check:before {
+    content: "\f058" !important;
+  }
+  
+  /* === HIDDEN ELEMENTS === */
+  input[name="shippingZipCode"],
+  .pre-shipping-tax-wrapper,
+  [data-step="shipping"] > section > h3,
+  [data-role="billing-info"],
+  .subtotal-wrapper.coupon-code-wrapper,
+  .promo-code-toggle-btn,
+  .product-info, 
+  .row-total,
+  .old-grand-total,
+  [data-role="pickFromMap"],
+  [data-role="shipping-option-speedy-office"] > span,
+  .checkout-summary-inner h3,
+  [data-step="shipping"]>section >h3 {
+    display: none !important;
+  }
+  
+  /* === SPECIFIC LAYOUT STYLES === */
+  .style-2.cart-wrapper .checkout-info:not(.no-summary), 
+  .style-2b.checkout-wrapper .cart-left-wrapper {
+    padding: 16px !important;
+  }
+  
+  .row-total {
+    margin: 0px !important;
+  }
+  
+  [data-step="shipping"]:has([data-role="shipping-option-speedy-office"].none) {
+    display: none !important;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    [data-role="delivery-type-picker"] {
+      flex-direction: column;
+    }
+    
+    .ml-10 {
+      margin-left: 0px !important;
+    }
+  }
+</style>
