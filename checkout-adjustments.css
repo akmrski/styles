@@ -23,7 +23,7 @@
 }
 
 #mw-shipping {
-    margin-bottom:0px !important;
+    margin-bottom:0px !important
 }
 
 [data-role="addressWrapper"] + h3 {
@@ -40,6 +40,10 @@ input[type="radio"] {
 
 input[name="shippingAddress"]{
 	margin-bottom:0px !important;
+}
+
+input[name="name"]{
+	margin-bottom:12px !important;
 }
 
 /* MW CUSTOM CSS END */
