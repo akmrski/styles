@@ -35,7 +35,7 @@ a[data-role="continue"] {
 }
 
 [data-role="delivery-type-picker"] .tick-wrapper {
-  background: url("https://cdn.onecard.bg/speedy-logo-full.svg")
+  background: url("https://cdn.onecard.bg/econt-logo.svg")
     no-repeat right 12px center / 74px auto;
   margin-bottom: 12px !important;
 }

@@ -46,6 +46,12 @@ input[name="name"]{
 	margin-bottom:12px !important;
 }
 
+[data-role="addressWrapper"] + h3 {
+    background: url("https://cdn.onecard.bg/logos/econt-logo.svg")
+      no-repeat right 12px center / 74px auto;
+    margin-bottom: 12px !important;
+  }
+
 /* MW CUSTOM CSS END */
 
 
