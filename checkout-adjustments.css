@@ -131,6 +131,7 @@ a[data-role="continue"] {
   
   .grand-total {
     display: flex;
+    flex-direction: column;
   }
   
   .checkout-old-price,
