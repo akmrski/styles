@@ -108,3 +108,11 @@ a[data-role="continue"] {
 [data-type="textarea"] {
   margin-top:16px !important;
 }
+
+/* === MEDIA QUERIES === */
+@media only screen and (max-width: 768px) {
+    
+    .checkout-info {
+      padding: 0px !important;
+    }
+  }
