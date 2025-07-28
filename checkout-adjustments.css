@@ -10,6 +10,10 @@
     padding-top: 16px !important;
 }
 
+.mw-couriers-office {
+    line-height: 1.4;
+}
+
 .mw-couriers-selected {
 	border: 2px solid var(--color-primary,#224290) !important;
 }
