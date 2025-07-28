@@ -52,7 +52,7 @@ input[name="name"]{
 
 [data-role="addressWrapper"] + h3 {
     background: url("https://cdn.foursleep.eu/logos/econt-logo.svg")
-      no-repeat right 12px center / 96px auto;
+      no-repeat right top 4px / 96px auto;
     margin-bottom: 12px !important;
 }
 
