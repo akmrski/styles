@@ -137,6 +137,7 @@ a[data-role="continue"] {
   .checkout-old-price,
   .old-grand-total {
     color: red;
+    text-align:right;
   }
 
 /* === MEDIA QUERIES === */
