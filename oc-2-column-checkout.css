@@ -1,3 +1,46 @@
+/* MW Custom CSS */
+
+.mw-couriers-choose, .mw-couriers-menu {
+	border-radius:6px !important
+}
+
+.mw-couriers-menus {
+    margin-top: 20px !important;
+    border-top: 1px solid #E5E7EB;
+    padding-top: 16px !important;
+}
+
+.mw-couriers-selected {
+	border: 2px solid var(--color-primary,#224290) !important;
+}
+
+.mw-couriers-choose:nth-of-type(1){
+	margin-top:0px !important;
+}
+
+#mw-shipping > .mw-couriers-choose:nth-of-type(3) {
+    margin-top: 12px !important;
+}
+
+[data-role="addressWrapper"] + h3 {
+	margin-top:24px !important;
+}
+
+[data-step="billing"] {
+	margin-top:0px !important;
+}
+
+input[type="radio"] {
+    accent-color: #224290 !important;
+}
+
+input[name="shippingAddress"]{
+	margin-bottom:0px !important;
+}
+
+/* MW CUSTOM CSS END */
+
+
 /* === BASE & LAYOUT === */
 .style-1 .checkout-info-inner {
   max-width: 100% !important;
