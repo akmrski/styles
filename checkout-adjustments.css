@@ -123,6 +123,21 @@ a[data-role="continue"] {
   margin-top:16px !important;
 }
 
+.subtotal-wrapper.grand-total-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  
+  .grand-total {
+    display: flex;
+  }
+  
+  .checkout-old-price,
+  .old-grand-total {
+    color: red;
+  }
+
 /* === MEDIA QUERIES === */
 @media only screen and (max-width: 768px) {
 
