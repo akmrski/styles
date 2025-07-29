@@ -429,3 +429,10 @@ span.old-price {
       border-top-right-radius: 16px;
   }
 }
+
+.product-price {
+  display: flex !important;
+  flex-direction: column-reverse !important;
+  align-items: flex-start !important;
+  gap: 8px !important;
+}
