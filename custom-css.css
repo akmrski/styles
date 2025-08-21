@@ -1,3 +1,9 @@
+/* Hide Quantity Selector Checkout*/ 
+
+div.qty {
+  display:none !important;
+}
+
 /* MW Custom CSS */
 
 .mw-couriers-choose, .mw-couriers-menu {
